@@ -44,10 +44,6 @@ int main(void) {
   sf::RenderWindow window(sf::VideoMode(528, 528), "cLogo Turtles");
   window.setSize(sf::Vector2u(528 * 2, 528 * 2));
   window.setFramerateLimit(60);
-  sf::Texture turtleTexture;
-  if(!turtleTexture.loadFromFile("res/turtle.png")) {
-    std::cerr << "Cannot load turtle texture!" << std::endl; return 1;
-  }
 
   std::vector<sf::Color> colors;
   for(int i = 0; i < 100; i++)
